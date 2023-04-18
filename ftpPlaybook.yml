@@ -1,0 +1,9 @@
+---
+- name: FTP package installation Playbook
+  hosts: dev
+  tasks:
+    - name: package Installation
+      yum: 
+        name: vsftpd
+        state: present   
+
